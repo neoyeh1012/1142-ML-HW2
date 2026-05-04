@@ -34,7 +34,7 @@ def remove_outliers(df):
 
 def encode_features(df):
     # TODO 4.1: 使用 pd.get_dummies 對 Sex、Embarked 進行編碼
-    df_encoded = pd.get_dummies(df, prefix={'Sex': 'S', 'Embarked': 'E'})
+    df_encoded = pd.get_dummies(df, prefix=['Sex', 'Embarked'])
     return df_encoded
 
 
